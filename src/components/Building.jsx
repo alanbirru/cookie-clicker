@@ -18,7 +18,7 @@ const Building = ({
     <button
       onClick={handleBuy}
       disabled={cookies < building.price}
-      className={`mt-2 text-white p-3 rounded-md shadow-lg w-[600px] ${
+      className={`mt-2 text-white p-3 rounded-md shadow-lg w-[500px] ${
         cookies < building.price ? 'bg-red-600' : 'bg-blue-600'
       }`}
     >
