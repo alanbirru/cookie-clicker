@@ -18,14 +18,14 @@ const Building = ({
     <button
       onClick={handleBuy}
       disabled={cookies < building.price}
-      className={`mt-2 text-white p-3 rounded-md shadow-lg w-[500px] ${
+      className={`mt-2 text-white p-3 rounded-md text-lg shadow-sm w-[500px] hover:scale-105 transition-all hover:shadow-xl ${
         cookies < building.price ? 'bg-red-600' : 'bg-blue-600'
       }`}
     >
-      <h2 className='font-bold text-lg'>
+      <h2 className='font-bold text-2xl'>
         {building.icon} {building.title}
       </h2>
-      <div>🍪 {building.price}</div>
+      <div className=' font-bold'>🍪 {building.price}</div>
       <div>
         {building.title}s owned: {building.owned}
       </div>
