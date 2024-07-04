@@ -42,7 +42,7 @@ function App() {
   ];
 
   const [buildings, setBuildings] = useState(initialBuildings);
-  const [cookies, setCookies] = useState(10000);
+  const [cookies, setCookies] = useState(0);
   const [cookiesPerSecond, setCookiesPerSecond] = useState(0);
 
   // Function to handle cookie click
